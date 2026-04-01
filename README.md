@@ -3,4 +3,4 @@ The method includes three approaches: a naive O(n²) solution, an O(n log n) sol
 
 isAnagram : checks if two strings are anagrams using two methods through  multiple methods (naive to optimized).
 
-hasDuplicate :checks for duplicates in a list through  multiple methods (naive to optimized).
+hasDuplicate : checks for duplicates in a list through  multiple methods (naive to optimized).
