@@ -28,19 +28,20 @@ class Solution:
           except ValueError:
             pass
 
+
+
+
+
+        
          # second, we have this solution, slightly better O(n log n)
          indexedNums = []
          # we create a new sorted version of the array, but we create tuples to save the indexes : )
          for i in range(len(nums)):
                indexedNums.append((nums[i], i))
-               
-         
          indexedNums.sort() 
-         
-         
+        
          gauche = 0
-         droite = len(indexedNums) - 1
-         
+         droite = len(indexedNums) - 1    
          while gauche < droite:
                
                somme = indexedNums[gauche][0] + indexedNums[droite][0]
@@ -55,13 +56,16 @@ class Solution:
                else:
                   droite -= 1
 
+
+
+
+
+    
          #Third solution, best solution with a complexity of O(n)  
          # we use dictionaries, 
          #that way we only loop one time 
          #through the array of n length
-
         sets = {} 
-
         for i, n in enumerate(nums):
             solution = target - n
             if solution in sets:
